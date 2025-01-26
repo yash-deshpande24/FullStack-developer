@@ -9,12 +9,12 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://jhgww7-3000.csb.app/city")
+      .get("/api/city")
       .then((response) => {
         setCity(response.data);
       })
-      .catch((Error) => {
-        console.log(Error);
+      .catch((error) => {
+        console.log(error);
       });
   });
 

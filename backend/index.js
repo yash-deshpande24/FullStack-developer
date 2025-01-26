@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   res.send("server is readt now");
 });
 
-app.get("/city", (req, res) => {
+app.get("/api/city", (req, res) => {
   const city = [
     {
       id: 1,
